@@ -8,7 +8,7 @@ const jsonParser = bodyParser.json();
 
 const { MongoClient } = require('mongodb');
 
-const mongoUrl = 'mongodb://localhost:27017'; // Change this to your MongoDB URL
+const mongoUrl = 'mongodb://mongodb:27017'; // Change this to your MongoDB URL
 const dbName = 'todoApp'; // Change this to your database name
 const collectionName = 'tasks'; // Change this to your collection name
 

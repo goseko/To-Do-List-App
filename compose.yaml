@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  to-do-app:
+    image: goseko/to-do-list-app 
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_HOST=mongodb
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
